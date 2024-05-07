@@ -2,6 +2,7 @@
   "name": "meranote.github.io",
   "packageManager": "yarn@4.1.1",
   "devDependencies": {
+    "prettier": "3.2.5",
     "vitepress": "^1.1.4"
   },
   "scripts": {

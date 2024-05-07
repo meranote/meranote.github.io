@@ -4,22 +4,20 @@ layout: home
 
 hero:
   name: "The Meranote Project"
-  text: "Chaniwat Seangchai's Portfolio Website"
-  tagline: My great project tagline
+  tagline: Chaniwat Seangchai's Profile Website
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Under Development
+      
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Coming Soon
+      
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Full-Stack Web Developer 🖥️
+    details:
+  - title: Game Development 🎮
+    details:
+  - title: Driven by Coffee ☕ and Anime 🎏
+    details:
 ---
-
