@@ -8,6 +8,10 @@ export default defineConfig({
   themeConfig: {
     logo: '/assets/images/meranote.png',
 
+    footer: {
+      message: 'Build with <a href="https://vitepress.dev/" target="_blank">VitePress</a>',
+    },
+
     nav: [
       { text: 'Under Development', link: '/' },
       // { text: 'Profile', link: '/profile' },
