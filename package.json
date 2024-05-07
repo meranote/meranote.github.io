@@ -1,0 +1,7 @@
+{
+  "name": "meranote.github.io",
+  "packageManager": "yarn@4.2.1",
+  "devDependencies": {
+    "vitepress": "^1.1.4"
+  }
+}
