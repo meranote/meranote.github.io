@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Chaniwat Seangchai's Profile Website",
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
-    logo: '/assets/images/meranote.png',
+    logo: '/images/meranote.png',
 
     footer: {
       message: 'Build with <a href="https://vitepress.dev/" target="_blank">VitePress</a>',
