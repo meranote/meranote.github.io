@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'The Meranote Project',
   description: "Chaniwat Seangchai's Profile Website",
+
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
     logo: '/images/meranote.png',
