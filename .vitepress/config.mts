@@ -1,46 +1,54 @@
 import { defineConfig } from 'vitepress';
+import VueDevTools from 'vite-plugin-vue-devtools';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'The Meranote Project',
   description: "Chaniwat Seangchai's Profile Website",
-
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Thai:wght@100..900&display=swap',
+      },
+    ],
+  ],
 
   // https://vitepress.dev/reference/default-theme-config
+  appearance: 'force-dark',
   themeConfig: {
     logo: '/images/meranote.png',
-
     footer: {
       message: 'Build with <a href="https://vitepress.dev/" target="_blank">VitePress</a>',
     },
-
     nav: [
-      { text: 'Under Development', link: '/' },
-      // { text: 'Profile', link: '/profile' },
-      // { text: 'Experience', link: '/experiences/web-app' },
-      // { text: 'Project', link: '/project' },
+      { text: 'Home', link: '/' },
+      { text: 'Profile', link: '/profile' },
+      { text: 'Experience', link: '/experiences/web-app' },
+      { text: 'Project', link: '/project' },
     ],
-
-    // sidebar: [
-    //   { text: 'Profile', link: '/profile' },
-    //   {
-    //     text: 'Experience',
-    //     items: [
-    //       { text: 'Web Application', link: '/experiences/web-app.md' },
-    //       { text: 'Mobile Application', link: '/experiences/mobile-app.md' },
-    //       { text: 'Server & Infrastructure', link: '/experiences/server-infra.md' },
-    //       { text: 'Chatbot', link: '/experiences/chatbot.md' },
-    //       { text: 'Game', link: '/experiences/game.md' },
-    //       { text: 'Augmented Reality', link: '/experiences/ar-vr.md' },
-    //     ],
-    //   },
-    //   {
-    //     text: 'Project',
-    //     items: [{ text: 'Overview', link: '/project' }],
-    //   },
-    // ],
-
+    sidebar: [
+      { text: 'Profile', link: '/profile' },
+      {
+        text: 'Experience',
+        items: [
+          { text: 'Web Application', link: '/experiences/web-app.md' },
+          { text: 'Mobile Application', link: '/experiences/mobile-app.md' },
+          { text: 'Server & Infrastructure', link: '/experiences/server-infra.md' },
+          { text: 'Chatbot', link: '/experiences/chatbot.md' },
+          { text: 'Game', link: '/experiences/game.md' },
+          { text: 'Augmented Reality', link: '/experiences/ar-vr.md' },
+        ],
+      },
+      {
+        text: 'Project',
+        items: [{ text: 'Overview', link: '/project' }],
+      },
+    ],
     socialLinks: [
       {
         icon: 'linkedin',
@@ -56,6 +64,15 @@ export default defineConfig({
         },
         link: 'https://gitlab.com/meranote',
       },
+    ],
+  },
+
+  // override vite config
+  vite: {
+    plugins: [
+      VueDevTools({
+        launchEditor: 'webstorm',
+      }),
     ],
   },
 });

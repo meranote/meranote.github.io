@@ -1,0 +1,6 @@
+:root {
+    /* default (fallback) w/ noto-sans thai */
+    --vp-font-family-base: 'Inter', 'Noto Sans Thai', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    /* monospace using jetbrains */
+    --vp-font-family-mono: 'JetBrains Mono', ui-monospace, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
